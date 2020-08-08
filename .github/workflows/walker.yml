@@ -106,6 +106,6 @@ jobs:
 
          run: |
                setopt shwordsplit
-               chmod +x $DEVICE/build.sh
+               chmod +x build.sh
                . /build.sh
       
