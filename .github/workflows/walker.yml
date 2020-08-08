@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_13.Y.07_GLO_007_2007291753/OnePlus7TOxygen_13.Y.07_OTA_007_all_2007291753_be3a.zip
-  ROM_NAME: OP7T
+  ROM_NAME: op7t
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,9 +29,11 @@ jobs:
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
             sudo apt-get update -y
-            sudo apt-get install -y simg2img  
-            sudo apt-get install unzip
+            sudo apt-get install -y simg2img 
             sudo apt-get install zip gzip tar
+            sudo -E apt-get install expect
+            sudo pip3 install --upgrade setuptools
+            sudo pip3 install --upgrade pip
             sudo apt update 2>/dev/null | grep packages
         
        - name: Initializing Payload
@@ -102,4 +104,3 @@ jobs:
          run: |
                chmod +x upload.sh
                ./upload.sh
-      
