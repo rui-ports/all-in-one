@@ -1,0 +1,74 @@
+name: oOf dynamic again
+
+on:
+#  release:
+#    types: [published]
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - '.config'
+#  schedule:
+#    - cron: 0 8 * * 5
+  watch:
+    types: [started]
+    
+env:
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_13.Y.07_GLO_007_2007291753/OnePlus7TOxygen_13.Y.07_OTA_007_all_2007291753_be3a.zip
+  ROM_NAME: op7t
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Checkout
+         uses: actions/checkout@master
+
+       - name: Initializing environments
+         run: |
+            sudo -E apt-get -qq update
+            sudo -E apt-get -qq install git openjdk-8-jdk wget
+            sudo apt-get install wget
+            sudo apt-get install p7zip-full
+            sudo apt-get update -y
+            sudo apt-get install -y simg2img  
+            sudo apt-get install unzip
+            sudo apt-get install zip gzip tar
+            sudo -E apt-get install expect
+            sudo apt update 2>/dev/null | grep packages
+        
+       - name: Payload
+         run: |
+              sudo aria2c http://tdrive.manofuranium.workers.dev/payload_dumper_tool_by_ius.zip
+              sudo unzip *.zip
+              cd payload_dumper
+              sudo python3 -m pip install protobuf
+              sudo aria2c $ROM_URL
+              sudo unzip *.zip
+              sudo python3 payload_dumper.py payload.bin
+              ls
+              sudo zip $ROM_NAME.zip system.img product.img vendor.img opproduct.img
+              sudo chmod 0755 $ROM_NAME.zip
+              
+       - name: Copying final zipp
+         run: |
+              mkdir lol
+              sudo cp -r payload_dumper/$ROM_NAME.zip lol
+              
+       - name: Extracting Sytem Overlay
+         run: |
+              cd lol
+              sudo unzip $ROM_NAME.zip
+              sudo mkdir lel
+              sudo mount -ro loop product.img lel/
+              sudo zip -r $ROM_NAME-SystemOverlay.zip lel/overlay
+              curl -sL https://git.io/file-transfer | sh
+              ./transfer gof $ROM_NAME-SystemOverlay.zip
+              
+       - name: Extracting Vendor Overlay
+         run: |
+              cd lol
+              sudo mkdir lel1
+              sudo mount -ro loop vendor.img lel1/
+              sudo zip -r $ROM_NAME-VendorOverlay.zip lel1/overlay
+              ./transfer gof $ROM_NAME-VendorOverlay.zip
