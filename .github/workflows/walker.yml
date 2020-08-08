@@ -98,7 +98,7 @@ jobs:
          run: |
               sudo install telegram /usr/bin
               chmod +x initial.sh
-              . /initial.sh
+              ./initial.sh
               
        - name: Execute Shell Script
          env:
@@ -106,5 +106,5 @@ jobs:
 
          run: |
                chmod +x upload.sh
-               . /upload.sh
+               ./upload.sh
       
