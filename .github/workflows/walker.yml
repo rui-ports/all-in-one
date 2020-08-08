@@ -56,8 +56,6 @@ jobs:
               sudo unzip *.zip
               sudo python3 payload_dumper.py payload.bin
               ls
-              sudo zip $ROM_NAME.zip system.img product.img vendor.img opproduct.img
-              sudo chmod 0755 $ROM_NAME.zip
               
        - name: Copying final zipp
          run: |
