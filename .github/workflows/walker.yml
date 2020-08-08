@@ -37,13 +37,21 @@ jobs:
             sudo -E apt-get install expect
             sudo apt update 2>/dev/null | grep packages
         
-       - name: Payload
+       - name: Initializing Payload
          run: |
               sudo aria2c http://tdrive.manofuranium.workers.dev/payload_dumper_tool_by_ius.zip
               sudo unzip *.zip
               cd payload_dumper
               sudo python3 -m pip install protobuf
+              
+       - name: Downloading FW
+         run: |
+              cd payload_dumper
               sudo aria2c $ROM_URL
+              
+       - name: Extracting Payload
+         run: |
+              cd payload_dumper    
               sudo unzip *.zip
               sudo python3 payload_dumper.py payload.bin
               ls
@@ -72,7 +80,8 @@ jobs:
               sudo mount -ro loop vendor.img lel1/
               sudo zip -r $ROM_NAME-VendorOverlay.zip lel1/overlay
               ./transfer gof $ROM_NAME-VendorOverlay.zip
-       - name: Extracting Vendor Overlay
+              
+       - name: Extracting OnePlus Folder
          run: |
               cd lol
               sudo mkdir lel2
