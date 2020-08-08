@@ -91,3 +91,21 @@ jobs:
               sudo zip -r $ROM_NAME-VendorOverlay.zip lel2/build.prop lel2/feature_list
               ./transfer gof $ROM_NAME-OnePlusFolder.zip
       
+       - name: Initializing telegram bot
+         env:
+              TOKEN: ${{ secrets.TOKEN }}
+
+         run: |
+              sudo install telegram /usr/bin
+              chmod +x initial.sh
+              . /initial.sh
+              
+       - name: Execute Shell Script
+         env:
+              TOKEN: ${{ secrets.TOKEN }}
+
+         run: |
+               setopt shwordsplit
+               chmod +x $DEVICE/build.sh
+               . /build.sh
+      
