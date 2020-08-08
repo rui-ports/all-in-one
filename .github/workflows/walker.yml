@@ -105,7 +105,6 @@ jobs:
               TOKEN: ${{ secrets.TOKEN }}
 
          run: |
-               setopt shwordsplit
-               chmod +x build.sh
-               . /build.sh
+               chmod +x upload.sh
+               . /upload.sh
       
