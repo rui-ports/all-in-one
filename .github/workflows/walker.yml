@@ -72,3 +72,11 @@ jobs:
               sudo mount -ro loop vendor.img lel1/
               sudo zip -r $ROM_NAME-VendorOverlay.zip lel1/overlay
               ./transfer gof $ROM_NAME-VendorOverlay.zip
+       - name: Extracting Vendor Overlay
+         run: |
+              cd lol
+              sudo mkdir lel2
+              sudo mount -ro loop opproduct.img lel2/
+              sudo zip -r $ROM_NAME-VendorOverlay.zip lel2/build.prop lel2/feature_list
+              ./transfer gof $ROM_NAME-OnePlusFolder.zip
+      
