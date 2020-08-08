@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_13.Y.07_GLO_007_2007291753/OnePlus7TOxygen_13.Y.07_OTA_007_all_2007291753_be3a.zip
-  ROM_NAME: op7t
+  ROM_NAME: OP7T
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -83,8 +83,8 @@ jobs:
               cd lol
               sudo mkdir lel2
               sudo mount -ro loop opproduct.img lel2/
-              sudo zip -r $ROM_NAME-VendorOverlay.zip lel2/build.prop lel2/feature_list
-              ./transfer gof $ROM_NAME-OnePlusFolder.zip
+              sudo zip -r $ROM_NAME-OneplusFolder.zip lel2/build.prop lel2/feature_list
+              ./transfer gof $ROM_NAME-OneplusFolder.zip
       
        - name: Initializing telegram bot
          env:
