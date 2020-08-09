@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_13.Y.07_GLO_007_2007291753/OnePlus7TOxygen_13.Y.07_OTA_007_all_2007291753_be3a.zip
-  ROM_NAME: OP7T
+  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7Oxygen/OnePlus7Oxygen_13.W.41_GLO_041_2007291632/OnePlus7Oxygen_13.W.41_OTA_041_all_2007291632_938c0a4f529d725.zip
+  ROM_NAME: OP7-Beta
 jobs:
   build:
     runs-on: ubuntu-latest
