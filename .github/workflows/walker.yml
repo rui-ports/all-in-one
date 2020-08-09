@@ -36,7 +36,7 @@ jobs:
             sudo pip3 install --upgrade pip
             sudo apt update 2>/dev/null | grep packages
         
-       - name: Initializing Payload
+       - name: Initializing Payloads
          run: |
               sudo aria2c http://tdrive.manofuranium.workers.dev/payload_dumper_tool_by_ius.zip
               sudo unzip *.zip
