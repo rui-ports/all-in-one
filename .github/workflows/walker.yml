@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7Oxygen/OnePlus7Oxygen_13.W.41_GLO_041_2007291632/OnePlus7Oxygen_13.W.41_OTA_041_all_2007291632_938c0a4f529d725.zip
+  ROM_URL: http://tdrive.manofuranium.workers.dev/OnePlus7Oxygen_13.W.41_OTA_041_all_2007291632_938c0a4f529d725.zip
   ROM_NAME: OP7-Beta
 jobs:
   build:
@@ -59,16 +59,14 @@ jobs:
          run: |
               mkdir lol
               sudo cp -r payload_dumper/system.img lol
-              sudo cp -r payload_dumper/product.img lol
-              sudo cp -r payload_dumper/opproduct.img lol 
               sudo cp -r payload_dumper/vendor.img lol
               
        - name: Extracting Sytem Overlay
          run: |
               cd lol
               sudo mkdir lel
-              sudo mount -ro loop product.img lel/
-              sudo zip -r $ROM_NAME-SystemOverlay.zip lel/overlay
+              sudo mount -ro loop system.img lel/
+              sudo zip -r $ROM_NAME-SystemOverlay.zip lel/system/product/overlay
               curl -sL https://git.io/file-transfer | sh
               ./transfer gof $ROM_NAME-SystemOverlay.zip
               
