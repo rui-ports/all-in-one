@@ -80,21 +80,13 @@ jobs:
               sudo zip -r $ROM_NAME-VendorOverlay.zip lel1/overlay
               ./transfer gof $ROM_NAME-VendorOverlay.zip
               
-       - name: Extracting Vendor Overlay
+       - name: Extracting Vendor 
          run: |
               cd lol
               sudo mkdir lel2
               sudo mount -ro loop vendor.img lel2/
               sudo zip -r $ROM_NAME-Vendor.zip lel2
               ./transfer gof $ROM_NAME-Vendor.zip
-
-       - name: Extracting OnePlus Folder
-         run: |
-              cd lol
-              sudo mkdir lel2
-              sudo mount -ro loop opproduct.img lel2/
-              sudo zip -r $ROM_NAME-OneplusFolder.zip lel2/build.prop lel2/feature_list
-              ./transfer gof $ROM_NAME-OneplusFolder.zip
       
        - name: Initializing telegram bot
          env:
