@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus8Oxygen_15.X.02_OTA_001_all_2006111749_wipe_d0f0a4b9dbde4cce.zip
-  ROM_NAME: OP8
+  ROM_URL: http://download.h2os.com/OnePlus7T%20Pro/OBT/OnePlus7TProHydrogen_13.X.07_OTA_007_all_2007030054_b16031cb06674e3d.zip
+  ROM_NAME: OP7TPro
   PRODUCT_IMAGE: true
   OPPRODUCT_IMAGE: true
   WHOLE_VENDOR: false
@@ -133,4 +133,4 @@ jobs:
 
          run: |
                chmod +x upload1.sh
-               ./upload1.sh
+               ./uploads.sh
