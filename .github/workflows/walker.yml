@@ -14,10 +14,10 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/op8test3.zip
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus8Oxygen_15.X.02_OTA_001_all_2006111749_wipe_d0f0a4b9dbde4cce.zip
   ROM_NAME: OP8
-  PRODUCT_IMAGE: false
-  OPPRODUCT_IMAGE: false
+  PRODUCT_IMAGE: true
+  OPPRODUCT_IMAGE: true
   WHOLE_VENDOR: false
 jobs:
   build:
