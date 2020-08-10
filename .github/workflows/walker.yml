@@ -77,7 +77,7 @@ jobs:
          run: |
               cd lol
               sudo mkdir lel
-              sudo mount -ro loop system.img lel/
+              sudo mount -ro loop product.img lel/
               sudo zip -r $ROM_NAME-SystemOverlay.zip lel/overlay
               curl -sL https://git.io/file-transfer | sh
               ./transfer gof $ROM_NAME-SystemOverlay.zip
