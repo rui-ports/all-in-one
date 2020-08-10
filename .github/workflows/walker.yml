@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/OnePlus7T%20Pro/OBT/OnePlus7TProHydrogen_13.X.07_OTA_007_all_2007030054_b16031cb06674e3d.zip
-  ROM_NAME: OP7TPro
+  ROM_URL: https://tdrive.manofuranium.workers.dev/OnePlus7TProHydrogen_13.X.07_OTA_007_all_2007030054_b16031cb06674e3d.zip
+  ROM_NAME: HydrogenOS-OP7TPro
   PRODUCT_IMAGE: true
   OPPRODUCT_IMAGE: true
   WHOLE_VENDOR: false
