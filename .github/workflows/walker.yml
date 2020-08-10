@@ -14,11 +14,11 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/OnePlus7Oxygen_13.W.41_OTA_041_all_2007291632_938c0a4f529d725.zip
+  ROM_URL: http://tdrive.manofuranium.workers.dev/op8test3.zip
   ROM_NAME: OP7-Beta
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
-  WHOLE_VENDOR: true
+  WHOLE_VENDOR: false
 jobs:
   build:
     runs-on: ubuntu-latest
