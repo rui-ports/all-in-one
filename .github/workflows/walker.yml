@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: http://tdrive.manofuranium.workers.dev/op8test3.zip
-  ROM_NAME: OP7-Beta
+  ROM_NAME: OP8
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: false
