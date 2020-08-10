@@ -133,4 +133,4 @@ jobs:
 
          run: |
                chmod +x upload1.sh
-               ./uploads.sh
+               ./upload1.sh
