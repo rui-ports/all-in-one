@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/NordOxygen_14_OTA_006_all_2008050222_19acc.zip
-  ROM_NAME: OxygenOS-OPNord
-  PRODUCT_IMAGE: true
+  ROM_URL: http://tdrive.manofuranium.workers.dev/OnePlus7ProOxygen_13.W.41_OTA_041_all_2007291643_5f80f3e.zip
+  ROM_NAME: OxygenOS-OP7Pro
+  PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: false
 jobs:
