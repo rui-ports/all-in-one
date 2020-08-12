@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus8ProOxygen_15.I.18_OTA_018_all_2005190055_downgrade_7e072ff5501841d9.zip
-  ROM_NAME: OxygenOS-OP8Pro
-  PRODUCT_IMAGE: true
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus7Oxygen_14.P.28_OTA_028_all_2007240028_dc0e38dc071a40aa.zip
+  ROM_NAME: OxygenOS-OP7
+  PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: false
 jobs:
@@ -88,7 +88,7 @@ jobs:
               cd lol
               sudo mkdir lel
               sudo mount -ro loop system.img lel/
-              sudo zip -r $ROM_NAME-SystemOverlay.zip lel/system/product/overlay
+              sudo zip -r $ROM_NAME-SystemOverlay.zip lel/system/app/OPAppUpgrader
               curl -sL https://git.io/file-transfer | sh
               ./transfer gof $ROM_NAME-SystemOverlay.zip
               
