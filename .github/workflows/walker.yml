@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/OnePlus7ProOxygen_13.W.41_OTA_041_all_2007291643_5f80f3e.zip
-  ROM_NAME: OxygenOS-OP7Pro
+  ROM_URL: http://tdrive.manofuranium.workers.dev/OnePlus7Oxygen_14.P.28_OTA_028_all_2007240028_dc0e38dc071a40aa.zip
+  ROM_NAME: OxygenOS-OP7
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: false
