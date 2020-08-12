@@ -17,7 +17,7 @@ env:
   ROM_URL: https://oxygenos.oneplus.net/OnePlus8ProOxygen_15.I.18_OTA_018_all_2005190055_downgrade_7e072ff5501841d9.zip
   ROM_NAME: OxygenOS-OP8Pro
   PRODUCT_IMAGE: true
-  OPPRODUCT_IMAGE: true
+  OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: false
 jobs:
   build:
