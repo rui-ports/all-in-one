@@ -14,10 +14,10 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/OnePlus7TProHydrogen_13.X.08_OTA_008_all_2008032335_306718649a06146.zip
-  ROM_NAME: HydrogenOS-OP7TPro
-  PRODUCT_IMAGE: True
-  OPPRODUCT_IMAGE: True
+  ROM_URL: http://tdrive.manofuranium.workers.dev/NordOxygen_14_OTA_007_all_2008180221_c45e1d5febd1f.zip
+  ROM_NAME: OxygenOS-OPNord
+  PRODUCT_IMAGE: true
+  OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: false
 jobs:
   build:
