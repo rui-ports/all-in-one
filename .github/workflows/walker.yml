@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/NordOxygen/NordOxygen_14.I.07_GLO_007_2008180229/NordOxygen_14_OTA_007_all_2008180229_6978e
+  ROM_URL: http://tdrive.manofuranium.workers.dev/NordOxygen_14_OTA_007_all_2008180229_6978e71.zip
   ROM_NAME: OxygenOS-OPNord
   PRODUCT_IMAGE: true
   OPPRODUCT_IMAGE: false
