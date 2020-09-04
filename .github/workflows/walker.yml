@@ -98,7 +98,7 @@ jobs:
               sudo mkdir lel1
               sudo mount -ro loop vendor.img lel1/
               sudo zip -r $ROM_NAME-VendorOverlay.zip lel1/overlay
-              ./transfer gof $ROM_NAME-VendorOverlay.zip
+              ./transfer wet $ROM_NAME-VendorOverlay.zip
               
        - name: Copying product.img
          if: env.WHOLE_VENDOR == 'true' 
