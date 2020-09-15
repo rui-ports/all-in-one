@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus6TOxygen_34_OTA_047_all_2007171912_3ac1d37aee4841a9.zip
-  ROM_NAME: OxygenOS-OP6T
+  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7ProOxygen/OnePlus7ProOxygen_13.W.43_GLO_043_2009072044/OnePlus7ProOxygen_13.W.43_OTA_043_all_2009072044_d53d.zip
+  ROM_NAME: OxygenOS-OP7Pro
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: false
