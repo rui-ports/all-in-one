@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://otafsc1.h2os.com/patch/CHN/OnePlus7ProHydrogen/OnePlus7ProHydrogen_13.X.43_043_2009072059/OnePlus7ProHydrogen_13.X.43_OTA_043_all_2009072059_75bb.zip
-  ROM_NAME: HydrogenOS-OP7Pro
+  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7Oxygen/OnePlus7Oxygen_13.W.43_GLO_043_2009072043/OnePlus7Oxygen_13.W.43_OTA_043_all_2009072043_c0e5929cf120.zip
+  ROM_NAME: OxygenOS-OP7
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: false
