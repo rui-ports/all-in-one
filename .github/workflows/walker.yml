@@ -16,8 +16,8 @@ on:
 env:
   ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_13.Y.08_GLO_008_2009072104/OnePlus7TOxygen_13.Y.08_OTA_008_all_2009072104_cb78d028d05.zip
   ROM_NAME: HydrogenOS-OP7T
-  PRODUCT_IMAGE: false
-  OPPRODUCT_IMAGE: false
+  PRODUCT_IMAGE: true
+  OPPRODUCT_IMAGE: true
   WHOLE_VENDOR: false
 jobs:
   build:
