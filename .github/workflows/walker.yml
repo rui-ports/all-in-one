@@ -16,8 +16,8 @@ on:
 env:
   ROM_URL: https://bigota.d.miui.com/V11.0.11.0.QDLMIXM/miui_DAISYGlobal_V11.0.11.0.QDLMIXM_5a0d0cf932_10.0.zip
   ROM_NAME: HydrogenOS-OP7T
-  PRODUCT_IMAGE: true
-  OPPRODUCT_IMAGE: true
+  PRODUCT_IMAGE: false
+  OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: true
 jobs:
   build:
