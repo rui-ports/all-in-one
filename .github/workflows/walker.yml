@@ -18,7 +18,7 @@ env:
   ROM_NAME: HydrogenOS-OP7T
   PRODUCT_IMAGE: true
   OPPRODUCT_IMAGE: true
-  WHOLE_VENDOR: false
+  WHOLE_VENDOR: true
 jobs:
   build:
     runs-on: ubuntu-latest
