@@ -41,7 +41,7 @@ jobs:
         
        - name: Initializing Payloads
          run: |
-              sudo aria2c http://tdrive.manofuranium.workers.dev/payload_dumper_tool_by_ius.zip
+              sudo aria2c https://index.download-content.cf/payload_dumper_tool_by_ius.zip
               sudo unzip *.zip
               cd payload_dumper
               sudo python3 -m pip install protobuf
