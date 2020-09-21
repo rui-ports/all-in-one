@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TOxygen/OnePlus7TOxygen_13.Y.08_GLO_008_2009072104/OnePlus7TOxygen_13.Y.08_OTA_008_all_2009072104_cb78d028d05.zip
+  ROM_URL: https://bigota.d.miui.com/V11.0.11.0.QDLMIXM/miui_DAISYGlobal_V11.0.11.0.QDLMIXM_5a0d0cf932_10.0.zip
   ROM_NAME: HydrogenOS-OP7T
   PRODUCT_IMAGE: true
   OPPRODUCT_IMAGE: true
