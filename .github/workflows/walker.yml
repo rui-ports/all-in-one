@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/5T/MP/OnePlus5THydrogen_43_OTA_064_all_2009080056_338a836209c54a7e.zip 
-  ROM_NAME: OxygenOS-OP5T
-  PRODUCT_IMAGE: false
+  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/NordOxygen/NordOxygen_14.I.10_GLO_010_2009260428/NordOxygen_14.I.10_OTA_010_all_2009260428_a13cc843db5.zip
+  ROM_NAME: OxygenOS-OPNord
+  PRODUCT_IMAGE: true
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: true
 jobs:
