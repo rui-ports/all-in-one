@@ -14,10 +14,10 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/NordOxygen/NordOxygen_14.I.10_GLO_010_2009260428/NordOxygen_14.I.10_OTA_010_all_2009260428_a13cc843db5.zip
-  ROM_NAME: OxygenOS-OPNord
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TProOxygen/OnePlus7TProOxygen_14.O.19_GLO_019_2009281704/OnePlus7TProOxygen_14.O.19_OTA_019_all_2009281704_a69c6577c.zip
+  ROM_NAME: OxygenOS-OP7TPro
   PRODUCT_IMAGE: true
-  OPPRODUCT_IMAGE: false
+  OPPRODUCT_IMAGE: true
   WHOLE_VENDOR: true
 jobs:
   build:
