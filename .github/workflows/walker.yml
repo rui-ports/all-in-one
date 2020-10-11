@@ -113,9 +113,9 @@ jobs:
          if: env.OPPRODUCT_IMAGE == 'true'
          run: |
               cd lol
-              sudo mkdir lel2
-              sudo mount -ro loop opproduct.img lel2/
-              sudo zip -r $ROM_NAME-OneplusFolder.zip lel2/build.prop lel2/feature_list
+              sudo mkdir lel3
+              sudo mount -ro loop opproduct.img lel3/
+              sudo zip -r $ROM_NAME-OneplusFolder.zip lel3/build.prop lel3/feature_list
               ./transfer gof $ROM_NAME-OneplusFolder.zip
        
        - name: Initializing telegram bot
