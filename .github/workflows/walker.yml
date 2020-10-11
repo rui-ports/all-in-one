@@ -19,6 +19,7 @@ env:
   PRODUCT_IMAGE: true
   OPPRODUCT_IMAGE: true
   WHOLE_VENDOR: true
+  OP7: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -67,7 +68,17 @@ jobs:
        - name: Copying product.img
          if: env.PRODUCT_IMAGE == 'true'
          run: sudo cp -r payload_dumper/product.img lol
-  
+
+       - name: Extracting OP7 Folder
+         if: env.OP7 == 'true'
+         run: |
+              cd lol
+              sudo mkdir lela
+              sudo mount -ro loop system.img lela/
+              sudo zip -r $ROM_NAME-OneplusFolder.zip lela/oneplus/build.prop lela/oneplus/feature_list
+              sudo zip -r $ROM_NAME-VendorOverlay.zip lela/vendor/overlay
+              sudo zip -r $ROM_NAME-SystemOverlay.zip lela/product/overlay
+
        - name: Copying opproduct.img
          if: env.OPPRODUCT_IMAGE == 'true'
          run: sudo cp -r payload_dumper/opproduct.img lol
