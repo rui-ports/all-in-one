@@ -14,12 +14,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7TProOxygen/OnePlus7TProOxygen_14.O.19_GLO_019_2009281704/OnePlus7TProOxygen_14.O.19_OTA_019_all_2009281704_a69c6577c.zip
-  ROM_NAME: OxygenOS-OP7TPro
-  PRODUCT_IMAGE: true
-  OPPRODUCT_IMAGE: true
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus6Oxygen/OnePlus6Oxygen_22.J.48_GLO_048_2010042239/OnePlus6Oxygen_22.J.48_OTA_048_all_2010042239_c0c1fee2ee.zip
+  ROM_NAME: OxygenOS-OP6
+  PRODUCT_IMAGE: false
+  OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: true
-  OP7: true
+  OP7: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -41,7 +41,7 @@ jobs:
             sudo apt update 2>/dev/null | grep packages
         
        - name: Initializing Payloads
-         if: env.PRODUCT_IMAGE == 'true'
+         if: env.WHOLE_VENDOR == 'true'
          run: |
               sudo aria2c https://index.download-content.cf/payload_dumper_tool_by_ius.zip
               sudo unzip *.zip
@@ -49,13 +49,13 @@ jobs:
               sudo python3 -m pip install protobuf
               
        - name: Downloading FW
-         if: env.PRODUCT_IMAGE == 'true'
+         if: env.WHOLE_VENDOR == 'true'
          run: |
               cd payload_dumper
               sudo aria2c $ROM_URL
               
        - name: Extracting Payload
-         if: env.PRODUCT_IMAGE == 'true'
+         if: env.WHOLE_VENDOR == 'true'
          run: |
               cd payload_dumper    
               sudo unzip *.zip
@@ -63,14 +63,14 @@ jobs:
               ls
               
        - name: Copying final zipp
-         if: env.PRODUCT_IMAGE == 'true'
+         if: env.WHOLE_VENDOR == 'true'
          run: |
               mkdir lol
               sudo cp -r payload_dumper/system.img lol
               sudo cp -r payload_dumper/vendor.img lol
    
        - name: Copying product.img
-         if: env.PRODUCT_IMAGE == 'true'
+         if: env.WHOLE_VENDOR == 'true'
          run: sudo cp -r payload_dumper/product.img lol
 
        - name: Extracting OP7 Folder
