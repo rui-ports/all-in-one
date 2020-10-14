@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus6Oxygen/OnePlus6Oxygen_22.J.48_GLO_048_2010042239/OnePlus6Oxygen_22.J.48_OTA_048_all_2010042239_c0c1fee2ee.zip
-  ROM_NAME: OxygenOS-OP6
+  ROM_URL: https://yaap.angerycat.tk/YAAP-11-Alpha-yaap_guacamole-20201013.zip
+  ROM_NAME: OxygenOS-OP7
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: true
