@@ -19,7 +19,7 @@ env:
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: true
-  OP7: true
+  OP7: false
 jobs:
   build:
     runs-on: ubuntu-latest
