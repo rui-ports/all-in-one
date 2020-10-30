@@ -14,12 +14,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://yaap.angerycat.tk/YAAP-11-Alpha-yaap_guacamole-20201013.zip
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7ProOxygen/OnePlus7ProOxygen_13.W.45_GLO_045_2010191035/OnePlus7ProOxygen_13.W.45_OTA_045_all_2010191035_181a6b.zip
   ROM_NAME: OxygenOS-OP7
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: true
-  OP7: false
+  OP7: true
 jobs:
   build:
     runs-on: ubuntu-latest
