@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://otafsg-cost-az.coloros.com/Nord_IND/NordOxygen_14.I.11_GLO_011_2010232007/patch/amazone2/GLO/NordOxygen/NordOxygen_14.I.11_GLO_011_2010232007/NordOxygen_14.I.11_OTA_011_all_2010232007_80d939d45947ca.zip
-  ROM_NAME: OxygenOS-OPNord
-  PRODUCT_IMAGE: true
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7Oxygen/OnePlus7Oxygen_14.P.30_GLO_030_2010111752/OnePlus7Oxygen_14.P.30_OTA_030_all_2010111752_d61a262fbe4cf5.zip
+  ROM_NAME: OxygenOS-OP7
+  PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: true
   OP7: false
