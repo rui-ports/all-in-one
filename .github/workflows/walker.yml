@@ -43,7 +43,7 @@ jobs:
        - name: Initializing Payloads
          if: env.WHOLE_VENDOR == 'true'
          run: |
-              sudo aria2c https://index.download-content.cf/payload_dumper_tool_by_ius.zip
+              sudo aria2c https://tdrive.elytra8.workers.dev/payload_dumper_tool_by_ius.zip
               sudo unzip *.zip
               cd payload_dumper
               sudo python3 -m pip install protobuf
@@ -69,6 +69,7 @@ jobs:
               sudo cp -r payload_dumper/system.img lol
               sudo cp -r payload_dumper/vendor.img lol
               sudo cp -r payload_dumper/opproduct.img lol
+              sudo cp -r payload_dumper/product.img lol
    
        - name: Copying product.img
          if: env.PRODUCT == 'true'
