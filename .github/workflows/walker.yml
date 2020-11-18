@@ -68,6 +68,7 @@ jobs:
               mkdir lol
               sudo cp -r payload_dumper/system.img lol
               sudo cp -r payload_dumper/vendor.img lol
+              sudo cp -r payload_dumper/opproduct.img lol
    
        - name: Copying product.img
          if: env.PRODUCT == 'true'
