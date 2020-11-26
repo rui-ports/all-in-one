@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://otafsc-cost.h2os.com/OnePlus7Pro_CH/OnePlus7ProHydrogen_21.H.31_031_2011091840/patch/CHN/OnePlus7ProHydrogen/OnePlus7ProHydrogen_21.H.31_031_2011091840/OnePlus7ProHydrogen_21.H.31_OTA_031_all_2011091840_0a74aa44f9c8c7.zip
+  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus7ProHydrogen_21.H.31_OTA_031_all_2011091840_0a74aa44f9c8c7.zip
   ROM_NAME: OxygenOS-OP7Pro
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
