@@ -14,10 +14,10 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus7ProHydrogen_21.H.31_OTA_031_all_2011091840_0a74aa44f9c8c7.zip
-  ROM_NAME: OxygenOS-OP7Pro
-  PRODUCT_IMAGE: false
-  OPPRODUCT_IMAGE: false
+  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus7TProOxygen_14.O.21_OTA_021_all_2011052307_bbe8ee31828a7a6.zip
+  ROM_NAME: OxygenOS-OP7TPro
+  PRODUCT_IMAGE: true
+  OPPRODUCT_IMAGE: true
   WHOLE_VENDOR: true
   OP7: false
 jobs:
