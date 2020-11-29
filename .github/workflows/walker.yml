@@ -70,7 +70,7 @@ jobs:
               sudo cp -r payload_dumper/vendor.img lol
    
        - name: Copying product.img
-         if: env.PRODUCT == 'true'
+         if: env.PRODUCT_IMAGE == 'true'
          run: sudo cp -r payload_dumper/product.img lol
 
        - name: Extracting OP7 Folder
