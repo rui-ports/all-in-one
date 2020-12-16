@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://tdrive.elytra8.workers.dev/OnePlus7ProNROxygen_21.E.25_OTA_025_all_2011182351_e3219790243.zip
-  ROM_NAME: OxygenOS-OP7ProNR
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus6Oxygen/OnePlus6Oxygen_22.J.49_GLO_049_2011161942/OnePlus6Oxygen_22.J.49_OTA_049_all_2011161942_9d1dafc7a.zip
+  ROM_NAME: OxygenOS-OP6
   PRODUCT_IMAGE: false
   OPPRODUCT_IMAGE: false
   WHOLE_VENDOR: true
